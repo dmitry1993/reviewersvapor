@@ -1,7 +1,7 @@
 import Vapor
 
 private let savedReviewers = ["Dmitry Holub", "Aliaksandr Batyesheu", "Andrei Olesau",
-                              "Anna Kazhuro", "Ihar Maroz", "Vlad Kubicki", "Maksim Panamarou",
+                              "Anna Kazhuro", "Vlad Kubicki", "Maksim Panamarou",
                               "Natalia Semicheva", "Tatsiana Gouteeva", "Vladimir Martyniuk", "Yan Schneider"]
 private var reviewers: [String] = []
 
@@ -9,6 +9,10 @@ func routes(_ app: Application) throws {
     
     app.get { req -> String in
         return getReviewers()
+    }
+    
+    app.get("list") { req -> [String] in
+        return savedReviewers
     }
 }
 
