@@ -2,7 +2,8 @@ import Vapor
 
 private let savedReviewers = ["Dmitry Holub", "Aliaksandr Batyesheu", "Andrei Olesau",
                               "Anna Kazhuro", "Vlad Kubicki", "Maksim Panamarou",
-                              "Natalia Semicheva", "Tatsiana Gouteeva", "Vladimir Martyniuk", "Yan Schneider"]
+                              "Natalia Semicheva", "Tatsiana Gouteeva", "Vladimir Martyniuk", "Yan Schneider",
+                              "Dmitry Holub"]
 private var reviewers: [String] = []
 
 func routes(_ app: Application) throws {
